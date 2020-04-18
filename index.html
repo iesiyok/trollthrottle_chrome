@@ -1,0 +1,81 @@
+<html>
+<head>
+	<script type="text/javascript" src="daa_front.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+  <script src="lib/sodium.js" async></script>
+  <script src="lib/faker.js" type="text/javascript"></script>
+	<script type="text/javascript" src="lib/links.js"></script>
+  <script type="text/javascript" src="https://rawgit.com/caolan/async/master/dist/async.min.js"></script>
+  <script src="lib/crypto-js.js"></script>
+  <script src="lib/snoowrap-v1.min.js"></script>
+  <script type="text/javascript" src="lib/form_loader.js"></script>
+
+  
+</head>
+	<body style="background-color:#F8F9F9;height: 80px;width:250px;">
+    <div id="form_0">
+      <h3 style="color:#9B59B6;"><center><b>Trollthrottle Web extension</b></center></h3>
+    </div>
+    &nbsp;&nbsp;
+    <div id="form_1">
+    </div>
+    &nbsp;&nbsp;
+    <div id="form_2">
+      <form id="ident_create" >
+        User name :<br>
+        &nbsp;&nbsp;<input type="text" id="username" style="background-color: #EAFAF1"><br>
+        Password :<br>
+        &nbsp;&nbsp;<input type="password" id="password" style="background-color: #EAFAF1"><br>
+        <br>
+        <input type="submit" id="create_ident_btn" value="Create new identity">
+      </form>
+      
+    </div>
+    &nbsp;
+    <div id="form_3">
+      <form id="comment_create">
+        Comment:<br>
+        <textarea id="comment" rows="8" cols="35"></textarea>
+        <br>
+        <br>
+        <input type="submit" id="create_comment_btn" value="Send Comment">
+      </form>
+      
+    </div>
+    <div id="form_4">
+      Your comment is published, see: 
+      <a href="https://old.reddit.com/r/trollthrottle/comments/ervowu/retrofitting/" target="_blank">
+        Retroffitting - Subreddit
+      </a>
+    </div>
+    <div id="form_5">
+      You exceeded your comment limit for today. Your message is greyed out, see:
+      <a href="https://old.reddit.com/r/trollthrottle/comments/ervowu/retrofitting/" target="_blank">
+        Retroffitting - Subreddit
+      </a>
+    </div>
+<!-- 		<script type="text/javascript">
+          var Module = {
+            print: function(text) { console.log(text); },
+            printErr: function(text) { console.error(text); },
+            onRuntimeInitialized: function() {
+              console.log("onRuntimeInitialized");
+              Module.create_nym2();
+            }
+          };
+        </script> -->
+<!--         <script type="text/javascript">
+        	var Module={};
+        </script> -->
+        <!-- <button onclick="clicked()">Click me</button> -->
+		<div style="font-size: 10px; height: 2em; position: fixed;bottom: 2em; ">This extension uses a modified version of <a href="https://github.com/miracl/MIRACL" target="_blank">
+        MIRACL 
+      </a> library, see: 
+      <a href="https://github.com/iesiyok/trollthrottle_chrome" target="_blank">
+        Extension source code 
+      </a>
+    </div>
+		
+	</body>
+</html>
+ 

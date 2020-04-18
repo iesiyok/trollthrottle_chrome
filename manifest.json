@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+
+  "name": "Trollthrottle Web extension",
+  "description": "This extension brings issuing and commenting procedures",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "img/icon.png",
+    "default_popup": "index.html",
+    "default_title": "Click here for Trollthrottle!"
+  },
+
+  "web_accessible_resources": [
+    "data/keys.json"
+  ],
+
+  "permissions": [
+     "storage",
+     "cookies", 
+     "http://localhost:13010/*"
+  ],
+  "content_scripts": [{
+     "js": ["lib/links.js", "daa_front.js", "lib/form_loader.js", "lib/sodium.js", "lib/faker.js" ],
+     "matches": ["http://*/*", "https://*/*"]
+   }],
+  "content_security_policy": "script-src 'self' 'unsafe-eval' https://rawgit.com/caolan/async/master/dist/async.min.js https://code.jquery.com/jquery-3.3.1.slim.min.js  ;  object-src 'self'; "
+  
+}
